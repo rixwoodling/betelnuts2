@@ -12,4 +12,8 @@ This "readme" file serves as a tutorial that will setup a Raspberry Pi with Piba
 ```
 wget https://drive.google.com/file/d/0B6iwnaY4N0WUbjR1MFNUU25iTkU/view?usp=sharing
 ```
-2. Then...
+2. Then insert SD into the computer. In terminal, identify the location of the SD card. It should look something like ```/dev/disk1```.
+```
+diskutil list
+```
+3. 
