@@ -8,7 +8,7 @@ This "readme" file serves as a tutorial that will setup a Raspberry Pi with Piba
 * ...and more!
 
 ##### Installing PiBang On SD card
-1. Open Terminal and download PiBang.
+1. Open Terminal (OSX or Linux) and download PiBang.
 ```
 wget https://drive.google.com/file/d/0B6iwnaY4N0WUbjR1MFNUU25iTkU/view?usp=sharing
 ```
