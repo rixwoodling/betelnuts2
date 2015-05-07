@@ -1,25 +1,15 @@
+###Git Journal
 
+[Exploring a New Git Init](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
+[Linear Commits](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
+[Checking Out the Past](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
+[Custom Configs](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
+[Branch Management](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
+[Merge Management](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
+[Remote Control](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
+[Exploring an Old Git Init](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
+[Further Study](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)  
 
-  * [HEAD](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head)
-  * [Screenshot](#screenshot)
-  * [Installation](#installation)
-        * [OR using Pathogen:](#or-using-pathogen)
-        * [OR using Vundle:](#or-using-vundle)
-  * [License](#license)
-
-###The Path of Git-lightenment
-
-Exploring a new Git Init
-Linear Commits
-Checking Out the Past
-Custom Configs
-Branch Management 
-Merge Management
-Push/Pulk Revolving Doors (Github)
-Exploring an old Git Init
-Further Study
-
-####Create a new local git repository
 ####Exploring a new Git Init 
 
 1. Start a new git repository with ```git init``` in an empty folder.
@@ -42,7 +32,7 @@ Open "HEAD" with ```nano HEAD```. All it should say is:
 ```bash
 ref: refs/heads/master
 ```
-<sup>Jump to here to see what happens when commits are made.</sup>
+<sup>Go [here](https://github.com/rixwoodling/raspberry-pi/blob/master/test.md#head) to see what happens when commits are made.</sup>
 
 #####branches/
 Open ```branches/``` directory using ```cd branches``` and type ```ls -a```. 
