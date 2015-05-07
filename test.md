@@ -1,3 +1,15 @@
+###The Path of Git-lightenment
+
+Exploring a new Git Init
+Linear Commits
+Checking Out the Past
+Custom Configs
+Branch Management 
+Merge Management
+Push/Pulk Revolving Doors (Github)
+Exploring an old Git Init
+Further Study
+
 ####Create a new local git repository
 ####Exploring a new Git Init 
 
@@ -16,15 +28,22 @@ drwxr-xr-x@  4 rixwoodling  staff   136B May  7 19:58 refs
 ```
 A new git initialization creates a handful of files and folders. Note the permissions and count numbers in the first two columns (fields). 
 
-4. Open "HEAD" with ```nano HEAD```. All it should say is:
+#####HEAD
+Open "HEAD" with ```nano HEAD```. All it should say is:
 ```bash
 ref: refs/heads/master
 ```
-5. Open "branches" directory using ```cd branches``` and type ```ls -a```. 
+<sup>Jump to here to see what happens when commits are made.</sup>
+
+#####branches/
+Open ```branches/``` directory using ```cd branches``` and type ```ls -a```. 
 ```bash
 .     ..
 ```
-6. Open "config" to view the default value configurations.
+<sup>Jump to here to see what happens when commits are made.</sup>
+
+#####config
+Open "config" to view the default value configurations.
 ```bash
 [core]
         repositoryformatversion = 0
