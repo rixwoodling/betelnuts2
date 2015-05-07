@@ -1,3 +1,12 @@
+
+
+  * [HEAD](#HEAD)
+  * [Screenshot](#screenshot)
+  * [Installation](#installation)
+        * [OR using Pathogen:](#or-using-pathogen)
+        * [OR using Vundle:](#or-using-vundle)
+  * [License](#license)
+
 ###The Path of Git-lightenment
 
 Exploring a new Git Init
