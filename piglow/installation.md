@@ -1,5 +1,7 @@
 SOFTWARE INSTALLATION
 
+<sup><i>The original notes can be found at `https://www.raspberrypi.org/learning/piglow/software/`.</i></sup>
+
 You'll need to make sure you have the following packages installed to proceed with the worksheet:
 
 smbus for Python 2
