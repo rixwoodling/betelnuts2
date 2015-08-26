@@ -50,3 +50,25 @@ To test this works, enter:
 
 sudo python test.py
 It should ask you to enter a series of colour values. If you get an error, check you have entered the commands above correctly.
+
+#### PiGlow Installation
+http://www.raspberrypi.org/learning/piglow/software/
+
+Installing smbus
+```sudo apt-get update```
+```sudo apt-get upgrade```
+
+```sudo apt-get install python-smbus```
+```sudo python -c "import smbus"``` 
+
+```mkdir piglow```
+```cd piglow```
+```wget http://...```
+```wget http://...```
+
+Enable I2C Driver Module
+```sudo nano /etc/modules```
+
+add the following lines
+> i2c-dev
+> i2c-bcm2708
