@@ -1,0 +1,34 @@
+#####
+#
+# PyGlow
+#
+#####
+#
+# Python module to control Pimoronis PiGlow
+# [http://shop.pimoroni.com/products/piglow]
+#
+# * pulsetest.py - test the pulsing light feature
+#
+#####
+
+
+from PyGlow import PyGlow
+
+
+b = input("Maximum brightness: ")
+s = input("Speed in milliseconds (try 1000 as a default): ")
+
+pyglow = PyGlow(brightness=b, speed=s, pulse=True)
+
+pyglow.all(0)
+
+print("Pulsing 1 Light")
+pyglow.led(1)
+
+print("Pulsing Arms")
+pyglow.arm(1)
+pyglow.arm(2)
+pyglow.arm(3)
+
+print("Pulsing All")
+pyglow.all()
