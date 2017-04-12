@@ -1,3 +1,53 @@
+#### PiGlow
+
+<sup><i>The `groupadd` command creates permission groups for users and processes.</i></sup>  
+<sup><i>It is often used in harmony with `adduser` and `sudo`.</i></sup>  
+
+---
+
+`1` Identify current groups.  
+><sup>`+` Type `groups`. <i>Assuming no users have been added yet, the only group shown is root.</i></sup>  
+><sup>`+` Then identify root with `id root`, which outputs:  
+```
+uid=0(root) gid=0(root) groups=0(root)
+```
+><sup>uid=0<i>...</i></sup>  
+
+<sup>`+` `groupadd `</sup>  
+<sup><i>`+` `apt-get install sudo`</i></sup>  
+<sup><i>`+` `apt-get install sudo`</i></sup>  
+
+###### sudo vs su
+
+<sup><i>Both `sudo` and `su` allows the same root privileges to the regular user, with a difference. Essentially, `sudo` is enabled as one-time usage, say to install a package at root level. Once the command is executed, root permissions revert back. With `su`, in addition to `su -` or `su - root`, the user is able to log into root to make any number of root-level commands up until the time the user exits the root session.</i></sup>  
+
+###### advantages, disadvantages and warnings  
+<sup>`+` Users use their own user login password instead of using root password.</sup>  
+<sup>`+` Every action requires the user to enter a password, forcing the user to think before each action.</sup>  
+<sup>`+` A log is kept of any command(s) run, which are located in `/var/log/auth.log`</sup>  
+<sup>`+` Because the user does not enter root first, any brute-force attacks to root are blocked.</sup>  
+<sup>`+` Admin rights for groups and users can be maintained without needing to change root password.</sup>  
+<sup>`+` Security settings can be customized for each user/group.</sup>   
+<sup>`!` Be aware the power of `sudo` can be just as damaging as `su`.</sup>  
+
+###### user levels  
+<sup><i>Once users and groups are added and defined with [useradd](useradd.md) and [groupadd](groupadd.md), security settings can be defined to each.</i></sup>  
+<sup>`root` Cannot ssh into root. Can only access via admin level.</sup>  
+<sup>`admin` Can read, write and excute all user files. Can use sudo to have root level permissions.</sup>  
+<sup>`user` Can read, write and execute if owner. Read and execute only if not owner. No sudo.</sup>  
+<sup>`guest` The most restricted security level. Can only read and execute, hence read-only. </sup>  
+
+###### resources
+
+<sup>`?` https://github.com/pimoroni/piglow</sup>  
+<sup>`?` http://askubuntu.com/questions/14222/how-to-add-a-guest-account-without-a-password</sup>   
+<sup>`?` http://www.yolinux.com/TUTORIALS/LinuxTutorialManagingGroups.html</sup>  
+<sup>`?` http://www.computerhope.com/unix/groupadd.htm</sup>  
+<sup>`?` http://linux.101hacks.com/unix/groupadd/</sup>  
+<sup>`?` http://www.hostingadvice.com/how-to/linux-add-user-to-group/</sup>  
+<sup>`?` http://stackoverflow.com/questions/14059916/is-there-a-command-to-list-all-unix-group-names</sup>  
+
+
 SOFTWARE INSTALLATION
 
 <sup><i>The original notes can be found at `https://www.raspberrypi.org/learning/piglow/software/`.</i></sup>
@@ -55,16 +105,16 @@ It should ask you to enter a series of colour values. If you get an error, check
 http://www.raspberrypi.org/learning/piglow/software/
 
 Installing smbus
-```sudo apt-get update```
-```sudo apt-get upgrade```
+<sup>`+` `sudo apt-get update`</sup>  
+<sup>`+` `sudo apt-get upgrade`</sup>  
 
-```sudo apt-get install python-smbus```
-```sudo python -c "import smbus"``` 
+<sup>`+` `sudo apt-get install python-smbus`</sup>  
+<sup>`+` `sudo python -c "import smbus"`</sup>  
 
-```mkdir piglow```
-```cd piglow```
-```wget http://...```
-```wget http://...```
+<sup>`+` `mkdir piglow`</sup>  
+<sup>`+` `cd piglow`</sup>  
+<sup>`+` `wget http://...`</sup>  
+<sup>`+` `wget http://...`</sup>  
 
 Enable I2C Driver Module
 ```sudo nano /etc/modules```
